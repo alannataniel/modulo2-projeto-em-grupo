@@ -1,0 +1,12 @@
+section.section {
+    display: flex;
+    flex-wrap: wrap;
+}
+div.texto {
+    margin: auto;
+    width: 500px;
+}
+div.img {
+    margin: auto;
+    width: 500px;
+}
