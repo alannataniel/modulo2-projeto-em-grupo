@@ -1,3 +1,6 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
 div.texto {
     margin: auto;
     width: 500px;
@@ -15,4 +18,8 @@ section {
 }
 p {
     text-align: justify;
+}
+.titulo-form {
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
