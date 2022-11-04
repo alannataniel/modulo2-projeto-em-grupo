@@ -10,3 +10,7 @@ div.img {
     margin: auto;
     width: 500px;
 }
+.titulo-form{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
