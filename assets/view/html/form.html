@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../../../css/style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
+      crossorigin="anonymous"
+    />
+    <title>Formulario</title>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-sm text-bg-dark bg-gradient">
+        <h1 class="container justify-content-center">Resumé</h1>
+        <div class="container justify-content-center">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link text-light" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Detalhes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Lista de Espera</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Log In</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container pt-2 mt-2 d-flex">
+      <section class="col-8 col-md-6 col-lg-3 col-xs-8 mx-auto text-start">
+        <h1 class="titulo-form">Cadastro</h1>
+        <form name="formUsuarios" method="post" action="" onsubmit=""></form>
+
+        <label class="espaco-label form-label" for="nome">Nome</label>
+        <input
+          type="text"
+          class="form-control"
+          id="nome"
+          placeholder="Luís Silva"
+          required
+        />
+
+        <label for="email" class="espaco-label form-label">Email</label>
+        <input
+          type="email"
+          class="form-control"
+          id="email"
+          placeholder="nome@dominio.com"
+          required
+        />
+
+        <label for="senha" class="espaco-label form-label">Senha</label>
+        <input
+          type="password"
+          class="form-control"
+          id="senha"
+          placeholder="Digite sua senha"
+          required
+        />
+
+        <label for="confirma" class="espaco-label form-label">Confirmação de senha</label>
+        <input
+          type="password"
+          class="form-control"
+          id="confirma"
+          placeholder="Confirme sua senha"
+          required
+        />
+
+        <label for="rg" class="espaco-label form-label">RG</label>
+        <input
+          type="text"
+          class="form-control"
+          id="rg"
+          maxlength="9"
+          placeholder="Digite somente números"
+          required
+        />
+
+        <label class="espaco-label form-label" for="txtCEP">CEP:</label>
+        <div class="input-group">
+          <input
+            type="text"
+            name="txtCEP"
+            class="form-control"
+            id="cep"
+            maxlength="8"
+            placeholder="Digite somente números"
+            required
+          />
+          <button class="btn btn-primary" type="button" id="btn-cep">
+            Buscar
+          </button>
+        </div>
+
+        <label for="inputCity" class="espaco-label form-label">Estado</label>
+        <input type="text" class="form-control" id="estado" required disabled />
+
+        <label for="inputCity" class="espaco-label form-label">Cidade</label>
+        <input type="text" class="form-control" id="cidade" required disabled />
+
+        <label for="inputCity" class="espaco-label form-label">Bairro</label>
+        <input type="text" class="form-control" id="bairro" required disabled />
+
+        <label for="inputAddress" class="espaco-label form-label">Rua</label>
+        <input type="text" class="form-control" id="rua" required disabled />
+
+        <label for="inputCity" class="espaco-label form-label">Número</label>
+        <input type="text" class="form-control" id="numero" required />
+
+        <label for="complemento" class="espaco-label form-label">Complemento</label>
+        <input
+          type="text"
+          class="form-control mb-3"
+          id="complemento"
+          placeholder="Apartamento, casa, loja"
+        />
+
+        <div class="alert alert-success mt-2" id="msg-sucesso" role="alert" hidden>
+          <h4 class="alert-heading">Seu cadastro foi realizado com sucesso!</h4>
+          <hr>
+          <p>Você já está cadastrado na lista de espera.</p>
+        </div>
+
+        <div class="alert alert-danger mt-1" id="msg-erro" role="alert" hidden>
+          <h4 class="alert-heading">Não foi possível realizar seu cadastro!</h4>
+          <hr>
+          <p>Por favor, confira seus dados.</p>
+        </div>
+
+        <div class="mt-3 mb-5 d-grid gap-2">
+          <button
+            type="submit"
+            name="btnSubmitUsuario"
+            class="btn btn-primary"
+            id="btn-cadastro"
+          >
+            Cadastrar
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer class="text-bg-dark bg-gradient p-5 d-flex justify-content-around">
+      <h1 class="">Resumé</h1>
+      <ul class="navbar-nav">
+        <li class="nav-item p-1">
+          <a class="nav-link text-light" href="index.html">Home</a>
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link text-light" href="#">Detalhes</a>
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link text-light" href="./form.html">Lista de Espera</a>
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link text-light" href="#">Contato</a>
+        </li>
+        <li class="nav-item p-1">
+          <a class="nav-link text-light" href="#">Log In</a>
+        </li>
+      </ul>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="../../models/js/GerenciadorDeCep.js"></script>
+    <script src="../../models/js/GerenciadorDeSenha.js"></script>
+    <script src="../../models/js/GerenciadorDeEmail.js"></script>
+    <script src="../../models/js/GerenciadorDeRg.js"></script>
+    <script src="../../view/js/ManipuladorDom.js"></script>
+    <script src="../../view/js/VisualizadorCep.js"></script>
+    <script src="../../controller/js/ControladorCep.js"></script>
+    <script src="../../controller/js/ControladorInput.js"></script>
+    <script src="../../controller/js/ControladorTamanhoInput.js"></script>
+    <script src="../../controller/js/ControladorAlertas.js"></script>
+    <script src="../../controller/js/EnviarCadastro.js"></script>
+  </body>
+</html>
